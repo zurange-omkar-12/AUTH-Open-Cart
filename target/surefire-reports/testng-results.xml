@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-26T23:21:28 IST" name="test" finished-at="2024-03-26T23:21:38 IST" duration-ms="10061">
+    <groups>
+    </groups>
+    <test started-at="2024-03-26T23:21:28 IST" name="Test_Chrome" finished-at="2024-03-26T23:21:38 IST" duration-ms="10061">
+      <class name="Test_Cases_Package.Test_Case_03">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:Test_Cases_Package.Test_Case_03@61862a7f]" started-at="2024-03-26T23:21:28 IST" name="BeforeClass" finished-at="2024-03-26T23:21:31 IST" duration-ms="2864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="Test_Case_Login_Page()[pri:0, instance:Test_Cases_Package.Test_Case_03@61862a7f]" started-at="2024-03-26T23:21:31 IST" name="Test_Case_Login_Page" finished-at="2024-03-26T23:21:32 IST" duration-ms="1170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Case_Login_Page -->
+        <test-method is-config="true" signature="Afterclass()[pri:0, instance:Test_Cases_Package.Test_Case_03@61862a7f]" started-at="2024-03-26T23:21:32 IST" name="Afterclass" finished-at="2024-03-26T23:21:38 IST" duration-ms="6003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Afterclass -->
+      </class> <!-- Test_Cases_Package.Test_Case_03 -->
+    </test> <!-- Test_Chrome -->
+  </suite> <!-- test -->
+</testng-results>
