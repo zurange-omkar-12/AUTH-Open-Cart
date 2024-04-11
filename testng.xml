@@ -16,6 +16,8 @@
     <test name="Test_Edge">
 		  <parameter name="Browser" value="Edge"></parameter>
 
+
+
     <classes>
       <class name="Test_Cases_Package.Test_Case_03"/>
     </classes>
