@@ -1,9 +1,9 @@
 package Test_Cases_Package;
 
-import java.util.List;
+
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
+
 import org.testng.annotations.Test;
 
 import Page_Object_Class.Open_Cart_Account_Login;
@@ -12,6 +12,7 @@ import Page_Object_Class.Open_Cart_My_Account;
 
 public class Test_Case_03 extends Base_Class_For_Test_cases {
 
+	
 	
 	@Test(dataProvider = "Email_Password")
 	void Test_Case_Login_Page(User_Details Temp)
@@ -28,7 +29,13 @@ public class Test_Case_03 extends Base_Class_For_Test_cases {
 		
 		My_Account = new Open_Cart_My_Account(Driver_Obj);
 		
-		Assert.assertTrue(My_Account.Check_My_Account_Label());
+		
+		
+		
+		//Assert.assertTrue(My_Account.Check_My_Account_Label());
+		
+		Assert.assertEquals(Driver_Obj.getTitle(),"My Account");
+		
 		My_Account.Click_Logout();
 						
 		}

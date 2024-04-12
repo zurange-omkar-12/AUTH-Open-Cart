@@ -50,7 +50,7 @@ public class Base_Class_For_Test_cases {
 		}
 		
 		Driver_Obj.manage().window().maximize();
-		Driver_Obj.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		Driver_Obj.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Driver_Obj.get(Properties_Obj.getProperty("appURL"));
 		
 		
@@ -59,8 +59,8 @@ public class Base_Class_For_Test_cases {
 	@AfterClass
 	void Afterclass() throws InterruptedException
 	{
-		Thread.sleep(6000);
-		//Driver_Obj.quit();
+		//Thread.sleep(6000);
+		Driver_Obj.quit();
 	}
 	
 	

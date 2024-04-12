@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-test" class="navigator-link">
-              <span class="suite-name border-passed">test</span>
+              <span class="suite-name border-failed">test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-test" class="navigator-link ">
-                    <span>C:\Eclipse_workspace\Open_Cart_Test\testng.xml</span>
+                    <span>C:\Users\a832482\git\AUTH-Open-Cart\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-test" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-test" class="hide-methods failed suite-test"> (hide)</a> <!-- hide-methods failed suite-test -->
+                      <a href="#" panel-name="suite-test" class="show-methods failed suite-test"> (show)</a> <!-- show-methods failed suite-test -->
+                    </span>
+                    <div class="method-list-content failed suite-test">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-test" title="Test_Cases_Package.Test_Case_03" class="method navigator-link" hash-for-method="Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@59c2af4f)">Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@59c2af4f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-test" title="Test_Cases_Package.Test_Case_03" class="method navigator-link" hash-for-method="Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@2a40925f)">Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@2a40925f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +122,12 @@
                     <div class="method-list-content passed suite-test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-test" title="Test_Cases_Package.Test_Case_03" class="method navigator-link" hash-for-method="Test_Case_Login_Page">Test_Case_Login_Page</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-test" title="Test_Cases_Package.Test_Case_03" class="method navigator-link" hash-for-method="Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@3d138d4f)">Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@3d138d4f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-test" title="Test_Cases_Package.Test_Case_03" class="method navigator-link" hash-for-method="Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@1d9586e8)">Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@1d9586e8)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-test -->
@@ -118,6 +142,48 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-test" class="panel test">
+          <div class="suite-test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test_Cases_Package.Test_Case_03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@59c2af4f)">
+                  </a> <!-- Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@59c2af4f) -->
+                  <span class="method-name">Test_Case_Login_Page</span>
+                  <span class="parameters">(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@59c2af4f)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [My Account] but found [Account Login]
+	at Test_Cases_Package.Test_Case_03.Test_Case_Login_Page(Test_Case_03.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@2a40925f)">
+                  </a> <!-- Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@2a40925f) -->
+                  <span class="method-name">Test_Case_Login_Page</span>
+                  <span class="parameters">(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@2a40925f)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [My Account] but found [Account Login]
+	at Test_Cases_Package.Test_Case_03.Test_Case_Login_Page(Test_Case_03.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-class-failed -->
           <div class="suite-test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -126,9 +192,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_Case_Login_Page">
-                  </a> <!-- Test_Case_Login_Page -->
+                  <a name="Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@3d138d4f)">
+                  </a> <!-- Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@3d138d4f) -->
                   <span class="method-name">Test_Case_Login_Page</span>
+                  <span class="parameters">(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@3d138d4f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@1d9586e8)">
+                  </a> <!-- Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@1d9586e8) -->
+                  <span class="method-name">Test_Case_Login_Page</span>
+                  <span class="parameters">(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@1d9586e8)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,19 +211,25 @@
         </div> <!-- panel test -->
         <div panel-name="test-xml-test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Eclipse_workspace\Open_Cart_Test\testng.xml</span>
+            <span class="header-content">C:\Users\a832482\git\AUTH-Open-Cart\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; name=&quot;test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;Test_Chrome&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test_Chrome&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test_Cases_Package.Test_Case_03&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test_Chrome --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test_Edge&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Test_Cases_Package.Test_Case_03&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test_Edge --&gt;
 &lt;/suite&gt; &lt;!-- test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,6 +242,9 @@
             <ul>
               <li>
                 <span class="test-name">Test_Chrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test_Edge (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +270,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Test_Case_Login_Page')
 data.setCell(0, 2, 'Test_Cases_Package.Test_Case_03')
-data.setCell(0, 3, 1349);
+data.setCell(0, 3, 1377);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Test_Case_Login_Page')
+data.setCell(1, 2, 'Test_Cases_Package.Test_Case_03')
+data.setCell(1, 3, 1371);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Test_Case_Login_Page')
+data.setCell(2, 2, 'Test_Cases_Package.Test_Case_03')
+data.setCell(2, 3, 975);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Test_Case_Login_Page')
+data.setCell(3, 2, 'Test_Cases_Package.Test_Case_03')
+data.setCell(3, 3, 775);
 window.suiteTableData['test']= { tableData: data, tableDiv: 'times-div-test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-test">
               </div> <!-- times-div-test -->
             </div> <!-- times-div -->
@@ -226,13 +322,37 @@ return data;
                 <span class="method-name">BeforeClass(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">BeforeClass(Edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Test_Case_Login_Page</span>
-                <span class="method-start">5861 ms</span>
+                <span class="method-name">Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@3d138d4f)</span>
+                <span class="method-start">47340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@59c2af4f)</span>
+                <span class="method-start">48715 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Afterclass</span>
-                <span class="method-start">7213 ms</span>
+                <span class="method-start">49497 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@1d9586e8)</span>
+                <span class="method-start">86841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_Case_Login_Page(Test_Cases_Package.Base_Class_For_Test_cases$User_Details@2a40925f)</span>
+                <span class="method-start">88220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">Afterclass</span>
+                <span class="method-start">89197 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
